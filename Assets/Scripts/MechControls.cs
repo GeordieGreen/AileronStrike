@@ -67,8 +67,8 @@ public class MechControls : MonoBehaviour
         float rv = playerActions.Mech.RotationVertical.ReadValue<float>();
 
         Quaternion currentRot = transform.rotation;
-        currentRot.y += rh * 3 * Time.deltaTime;
-        currentRot.x += rv * 3 * Time.deltaTime;
+        currentRot.y += rh * 2 * Time.deltaTime;
+        currentRot.x += rv * 2 * Time.deltaTime;
 
         transform.rotation = currentRot;
 
